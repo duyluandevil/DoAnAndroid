@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/my_gradient_drawable">
+
+    <RelativeLayout
+        android:id="@+id/rlThanhTren"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#06e8ab"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:layout_marginLeft="20dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/txtTenPhong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TENPHONG"
+            android:textColor="#439e8e"
+            android:textSize="30dp"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/imgChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+<!--    Đối phương-->
+    <RelativeLayout
+        android:id="@+id/rlThongTinDoiPhuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlThanhTren"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgDaiDien1"
+            android:layout_marginLeft="20dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/hinh_nen_tuan_2"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/imgDaiDien1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/txtTenPlayer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#439e8e"
+                android:text="Player1"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                />
+
+            <ProgressBar
+                android:id="@+id/prbMauPlayer1"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="30"
+                android:progress="30"
+                android:progressDrawable="@drawable/progress_bar_custom_hp"
+                />
+
+            <!--                android:progressDrawable="@drawable/progress_bar_custom_hp" -->
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlGame"
+        android:layout_below="@+id/rlThongTinDoiPhuong"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlThongTinBanThan"
+        tools:ignore="NotSibling">
+
+        <GridLayout
+            android:layout_centerInParent="true"
+            android:id="@+id/board"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_weight="0"
+            android:background="@drawable/my_gradient_drawable"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+    <!--    Bản thân-->
+    <RelativeLayout
+        android:id="@+id/rlThongTinBanThan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/imgDaiDien2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTenPlayer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#439e8e"
+                android:text="Player2"
+                android:textSize="30dp"
+                android:layout_weight="1"
+
+                />
+
+            <ProgressBar
+                android:id="@+id/prbMauPlayer2"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="30"
+                android:progress="30"
+                android:progressDrawable="@drawable/progress_bar_custom_hp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgDaiDien2"
+            android:layout_marginRight="20dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/hinh_nen_1"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

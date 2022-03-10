@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "462440695020",
+    "firebase_url": "https://gamedoikhang-2765c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "gamedoikhang-2765c",
+    "storage_bucket": "gamedoikhang-2765c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462440695020:android:b3c6021b637e8206b8d1c9",
+        "android_client_info": {
+          "package_name": "com.example.gamedoikhang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462440695020-bb2nmsbd99ldroq43ths0jbpqhdg70fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8IxTewJp0egnK_IAQ3sCcJJg2qHgO9Ic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462440695020-bb2nmsbd99ldroq43ths0jbpqhdg70fh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

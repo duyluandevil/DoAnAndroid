@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/my_gradient_drawable"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_phailolnacuoi" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnZoLuon"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="Zô luôn!"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/font_fvf"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"
+            android:textAllCaps="false"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnXungBaThienHa"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="Xưng bá thiên hạ"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/font_fvf"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"
+            android:textAllCaps="false"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:onClick="ThoatGame"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="50dp"
+            android:text="Xin cáo từ"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/font_fvf"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"
+            android:textAllCaps="false"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

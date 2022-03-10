@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListRoomActivity"
+    android:background="@drawable/my_gradient_drawable"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/txtTieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách phòng"
+        android:fontFamily="@font/font_fvf"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:shadowColor="@color/black"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="1.0"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/txtTieuDe"
+        android:id="@+id/llDuoi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <ListView
+            android:layout_below="@+id/txtTieuDe"
+            android:id="@+id/lstPhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingBottom="10dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_below="@+id/lstPhong"
+            android:id="@+id/btnTaoPhong"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/button_shape"
+            android:text="Tạo phòng"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/font_fvf"
+            android:textColor="@color/white"
+            android:layout_weight="5"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+

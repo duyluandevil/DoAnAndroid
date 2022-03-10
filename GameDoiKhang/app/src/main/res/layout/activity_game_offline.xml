@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOfflineActivity"
+    android:background="@drawable/my_gradient_drawable">
+
+
+        <RelativeLayout
+            android:id="@+id/rlThanhTren"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#06e8ab"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtBack"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_baseline_arrow_back_ios_24"
+                android:textSize="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="High Score"
+                android:textColor="#439e8e"
+                android:textSize="30sp"
+                android:paddingBottom="40dp"/>
+
+            <TextView
+                android:id="@+id/txtDiemCaoNhat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#439e8e"
+                android:textSize="30sp"
+                android:paddingTop="40dp"/>
+
+            <ImageView
+                android:id="@+id/txtRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/refresh"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rlThanhDuoi"
+        android:layout_below="@+id/rlThanhTren"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+
+
+        <GridLayout
+            android:id="@+id/board"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_centerInParent="true"
+            android:layout_weight="0"
+            android:background="@drawable/my_gradient_drawable"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlThanhDuoi"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#03ddb6"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điểm: "
+                android:textColor="#439e8e"
+                android:textSize="40dp"/>
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#439e8e"
+                android:textSize="40dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true">
+
+
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                tools:text="1:00"
+                android:textColor="#439e8e"
+                android:textSize="40dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
